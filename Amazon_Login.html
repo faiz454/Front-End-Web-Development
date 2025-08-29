@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Login page | Amazon.jobs</title>
+        <link rel="icon" href="/Amazon_icon.png">
+    </head>
+    <style>
+        h1{
+            text-align: center;
+            margin-top: 60px;
+        }
+        h5{
+            text-align: center;
+        }
+        h3{
+            margin-left: 10px;
+        }
+        h4{
+            margin-left: 10px;
+        }
+        .box1{
+            border-radius: 2px;
+            border: 1px solid black;
+            width: 390px;
+            height: 270px;
+            margin-left: 175px;
+            border: 1px solid #ccc;
+        }
+        .box2{
+            border-radius: 2px;
+            border: 1px solid black;
+            width: 390px;
+            height: 210px;
+            margin-left: 175px;
+            border: 1px solid #ccc;
+        }
+        .box3{
+            border-radius: 2px;
+            border: 1px solid black;
+            width: 390px;
+            height: 130px;
+            margin-left: 175px;
+            border: 1px solid #ccc;
+        }
+        p{
+            margin-left: 10px;
+        }
+        input{
+            border-radius: 2px;
+            margin-left: 10px;
+            width: 360px;
+            height: 45px;
+            border: 1px solid #ccc;
+        }
+        .b1{
+            width: 370px;
+            height: 40px;
+            border-radius: 3px;
+            background-color: #F4C96DFF;
+            border: 1px solid #ccc;
+        }
+        .b2{
+            width: 370px;
+            height: 40px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            margin-top: 15px;
+            background-color: white;
+        }
+        .b3{
+            width: 360px;
+            height: 40px;
+            margin-left: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            background-color: #B9B9B9FF;
+        }
+        .b4{
+            margin-left: 10px;
+            border-radius: 3px;
+            border: none;
+            background-color: #fff;
+        }
+        .A_login{
+            color:black;
+        }
+        .G_login{
+            color: black;
+        }
+        .Create{
+            color: #00B9F2;
+        }
+    </style>
+    <body>
+        <h1>amazon jobs</h1>
+        <div class = "box1">
+            <h3>Use your Amazon.com or Google account</h3>
+            <br>
+            <p>Only your name and email address are shared with amazon.jobs.<p>
+            <button class = "b1"><a class = "A_login" href="https://na.account.amazon.com/ap/signin?_encoding=UTF8&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.pape.max_auth_age=0&ie=UTF8&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=lwa&openid.assoc_handle=amzn_lwa_na&marketPlaceId=ATVPDKIKX0DER&arb=2a01a9dd-8f70-404b-8551-74850e628b0a&language=en_US&openid.return_to=https%3A%2F%2Fna.account.amazon.com%2Fap%2Foa%3FmarketPlaceId%3DATVPDKIKX0DER%26arb%3D2a01a9dd-8f70-404b-8551-74850e628b0a%26language%3Den_US&enableGlobalAccountCreation=1&metricIdentifier=amzn1.application.e3b40bcf8dae40e6bf8b197b9b3dec8d&signedMetricIdentifier=b1rnnUP4iinb%2B%2BwjCOWA1f5Y%2B6DlINB%2BDQCz1Q54AtU%3D">Login with Amazon</a></button> 
+            <button class = "b2"><a  class= "G_login"href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20openid&response_type=code&redirect_uri=https%3A%2F%2Fpassport.amazon.jobs%2Fsocial%2Flwg&client_id=442591732001-851e1je21eljm98t7p2ot4g729b0p341.apps.googleusercontent.com&service=lso&o2v=2&flowName=GeneralOAuthFlow">Login with Google</a></button>
+        </div>
+        <h5>-----------------------or---------------------</h5>
+        <div class = "box2">
+            <h3>Log in to your amazon.jobs account</h3>
+            <h4>Email address</h4>
+            <form >
+                <input type="text">
+            </form>
+            <button onclick = "Btn()" class = "b3">Continue</button>
+            <script>
+                function Btn(){
+                    alert("Logged in Successfully!!!")
+                }
+            </script>
+        </div>
+        <br>
+        <br>
+        <div class = "box3">
+            <h3>Dont't have an amazon.jobs account?</h3>
+            <br>
+            <button class = "b4"><a class = "Create" href="https://passport.amazon.jobs/">Create one!</a></button>
+        </div>
+    </body>
+</html>

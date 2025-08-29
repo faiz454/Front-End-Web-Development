@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>CSS Box Model</title>
+    <style>
+        h1{
+            text-align: center;
+            color:rgb(33, 123, 8);
+            text-shadow: 2px 2px 3px rgb(77, 73, 73);
+        }
+        .parent{
+            background-color: lightblue;
+            height: 400px;
+            width: 400px;
+            margin-left: 175px;
+            position:absolute ;
+            box-shadow: 5px 5px 7px rgb(77, 73, 73);
+        }
+
+        .child1{
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 145px;
+            margin-bottom: 70px;
+            position: absolute;
+            box-shadow: 5px 5px 7px rgb(77, 73, 73);
+        }
+        .subchild1{
+            background-color:beige;
+            height: 50px;
+            width: 50px;
+            margin-left: 25px;
+            margin-top: 25px;
+            border-radius: 30px;
+            box-shadow: 5px 5px 7px rgb(77, 73, 73);;
+
+        }
+        .par_down{
+            background-color:burlywood;
+            height: 150px;
+            width: 155px;
+            margin-left: 120px;
+            margin-top: 120px;
+            position: absolute;         
+            box-shadow: 5px 5px 7px rgb(77, 73, 73);;
+
+        }
+    </style>    
+    </head>
+    <body>
+        <h1><marquee> Box Model</marquee></h1>
+        <div class = "parent">
+            <div class = "par_down"></div>
+            <div class = "child1">
+                <div class = "subchild1"></div>
+            </div>
+        </div>
+
+    </body>
+</html>
