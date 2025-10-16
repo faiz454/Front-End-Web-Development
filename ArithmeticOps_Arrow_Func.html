@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Arithmetic Operation Arrow</title>
+        <style>
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                color: cadetblue;
+            }
+        </style>
+        <body>
+            <h1>Arithmetic Ops Using Arrow Function</h1>
+            <script>
+                let Addition = (a,b) =>{
+                    return a+b;
+
+                }
+
+                let Subtract = (a,b) =>{
+                    return a-b;
+                
+               }
+               
+               let Multiply = (a,b) =>{
+                   return a*b;
+               }
+
+                let Div = (a,b) =>{
+                   return a/b; 
+               }
+               
+                let Remainder = (a,b) =>{
+                   return a%b;
+               }
+               
+               let a = Number(prompt("Enter First Number"));
+               let b = Number(prompt("Enter Second Number"));
+               let ch = prompt("Choose Op : add/sub/mul/div/rem");
+
+               let result;
+
+               if (ch == "add"){
+                 result = Addition(a,b);
+               }
+               else if(ch == "sub"){
+                result = Subtract(a,b); 
+               }
+               else if(ch == "mul"){
+                result = Multiply(a,b);
+               }
+               else if(ch == "div"){
+                result = Div(a,b);
+               }
+               else if(ch == "rem"){
+                result = Remainder(a,b);
+               }
+               else{
+                result = "Invalid";
+               }
+
+               document.writeln("Result: " + result);
+              
+              
+            </script>
+        </body>
+    </head>
+</html>

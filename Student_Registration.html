@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Student Registration Form</title>
+        <style>
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                color:cadetblue ;
+
+            }
+            .container{
+                background: rgb(205, 204, 204);
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px 30px;
+                border-radius: 8px;
+                box-shadow: 0 0 29px grey;
+            }
+            label {
+                display: block;
+                margin-top: 12px;
+                margin-bottom: 4px;
+                font-weight: bold;
+            }
+            #User,#Address{
+                width: 100%;
+                /* text-align: center; */
+            }
+            button{
+                margin-top: 16px;
+                width: 100%;
+                background-color:blanchedalmond;
+                color: white;
+                border: none;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 4px;
+            }
+            button:hover {
+             background-color:burlywood;
+            }
+            body{
+                background-color:bisque;
+            }
+            input, textarea {
+                    width: 100%; /* Make element fill the container */
+                    padding: 8px; /* Add some space inside the box */
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box; /* CRITICAL: This ensures width is consistent */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Student Registration</h1>
+
+        <div class="container">
+            <form id="studform">
+                <label>Reg id:</label>
+                <input id="RegId" placeholder="Enter Reg id" type="number" required><br>
+
+                <label>Student Name:</label>
+                <input id="StudName" placeholder="Enter Name" type="text" required><br>
+
+                <label>Student Course:</label>
+                <input id="StudCourse" placeholder="Enter Course" type="text" required><br>
+                
+                <label>Student College:</label>
+                <input id="StudCollege" placeholder="Enter College" type="text" required><br>
+                
+                <label>Student Email:</label>
+                <input id="StudEmail" placeholder="Enter Email" type="email" required><br>
+
+                <label>Student Address:</label>                
+                <textarea id = "StudAddress" placeholder="Enter Your Address" name="" id="Address" required></textarea>
+                 <br><br>
+                <button type="submit">Send</button>
+            </form>
+            
+            <p id="para"></p>
+            </div>
+
+            <script>
+              const studform= document.getElementById("studform")
+              const User= document.getElementById("user")
+              const para = document.getElementById("para")
+              function Display(event){
+                 event.preventDefault()
+                  
+                 const RegIdValue = document.getElementById("RegId").value;
+                 const nameValue = document.getElementById("StudName").value;
+                 const courseValue = document.getElementById("StudCourse").value;
+                 const collegeValue = document.getElementById("StudCollege").value;
+                 const emailValue = document.getElementById("StudEmail").value;
+                 const addressValue = document.getElementById("StudAddress").value;
+
+                 const full = "<b>Student Details:</b><br>"+
+                               "Reg id: " + RegIdValue + "<br>"+
+                               "Name: " + nameValue + "<br>"+
+                               "Course: " + courseValue + "<br>"+
+                               "College: " + collegeValue + "<br>"+
+                               "Email: " + emailValue + "<br>"
+                               "Address: " + addressValue + "<br>";
+                               
+                 para.innerHTML = full;
+                 studform.reset();
+                }
+             studform.addEventListener('submit',Display);
+           </script>
+        </div>
+    </body>
+</html>
